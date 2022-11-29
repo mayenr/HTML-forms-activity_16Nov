@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="htmlforms_registration.css">
+    <link rel="icon" href="incodenito logo.jpg">
+    <style>
+        .form {
+            background-color: grey;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: fit-content;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            margin-left: 420px;
+            font-family: sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <br><br><a href="htmlforms_home.html">HOME</a href="htmlforms_home.html">
+    </div>
+  
+    <div class="form">
+    <div class="transbox">
+        <form>
+        <form action="htmlforms_registration.php" method="post">
+            <input type="checkbox" value="yes"><b>Yes! I will attend the InCodenito Graduation Zoom Party!</b><br><br> 
+            <font style="color:rgb(141, 6, 6)">*required field</font><br><br>
+            First Name: <input type="text" name="fname"><font style="color:rgb(141, 6, 6)"> *</font><br><br>
+            Last Name: <input type="text" name="lname"><font style="color:rgb(141, 6, 6)"> *</font><br><br>
+            <input type="radio" name="Gender" value="Male"> Male
+            <input type="radio" name="Gender" value="Female"> Female<font style="color:rgb(141, 6, 6)">  *</font><br><br>
+            Birthday: <input type="date" name="birthday"><font style="color:rgb(141, 6, 6)"> *</font><br><br>
+            Email Address: <input type="email" name="email"><font style="color:rgb(141, 6, 6)"> *</font><br><br>
+            Mobile Number: <input type="tel" name="telno" pattern="0-9]{3} - [0-9] {2}" required><font style="color:rgb(141, 6, 6)"> *</font><br><br>
+            Select Industry: <select name="industry"> 
+                <option value="Choose One"> </option>
+                <option value="IT Industry">IT Industry</option>
+                <option value="Manufacturing">Manufacturing</option>
+                <option value="Services Industry">Services Industry</option>
+                <option value="Others">Others</option>
+            </select><font style="color:rgb(141, 6, 6)"> *</font><br><br>
+            Select Location: <select name="location"> <br>
+                <option value="Choose One"> </option>
+                <option value="Luzon">Luzon</option>
+                <option value="Visayas">Visayas</option>
+                <option value="Mindanao">Mindanao</option>
+                <option value="International / Abroad">International / Abroad</option>
+            </select><font style="color:rgb(141, 6, 6)"> *</font><br><br>
+        
+            <center><p><b>Please click SUBMIT to Register</b></p></center>
+            <center><button type="button" input type="reset" value="Reset" style="padding: 10px" onclick="alert('Reset Data Fields')"><b>RESET</b></button>  
+    
+            <button type="button" input type="submit" value="Submit" style="padding: 10px" onclick="alert('You are now registered to attend the WD33P InCodenito Graduation Zoom Party! Please check your email for confirmation. Thank you.')"><b>SUBMIT</b></button></center>
+
+        </form>
+        </form>
+    </div>
+    </div>
+</body>
+
+    <div class="footer"></div>
+
+</html>
